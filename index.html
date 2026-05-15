@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Geneva Blasters Cricket Club</title>
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- FONT AWESOME FOR ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="#" class="nav-logo">
+      <div class="nav-crest">
+        <img src="assets/image.png" alt="Crest">
+      </div>
+      <span>
+        Geneva<br>
+        Blasters
+      </span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#fixtures">Fixtures</a></li>
+      <!-- <li><a href="#squad">Squad</a></li> -->
+      <!-- <li><a href="#gallery">Gallery</a></li> -->
+      <li><a href="#join">Join Us</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme"></button>
+      <button class="nav-mobile-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+
+    <div class="hero-content reveal">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Geneva, Switzerland ·
+      </div>
+
+      <h1>
+        Geneva
+        <em>Blasters</em>
+      </h1>
+
+      <p class="hero-sub">
+        Where passion meets the pitch.
+        Switzerland based cricket club,
+        bringing together players from across the globe.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#join" class="btn btn-primary">🏏 Join the Club</a>
+        <a href="#fixtures" class="btn btn-outline">View Fixtures →</a>
+      </div>
+    </div>
+
+    <div class="hero-stats reveal-right">
+      <div class="hero-stat">
+        <div class="num counter" data-target="35">0</div>
+        <div class="label">Members</div>
+      </div>
+
+      <div class="hero-stat">
+        <div class="num counter" data-target="6">0</div>
+        <div class="label">Nations</div>
+      </div>
+
+      <div class="hero-stat">
+        <div class="num counter" data-target="6">0</div>
+        <div class="label">Seasons</div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="reveal">
+      <span class="section-tag">Our Story</span>
+      <h2 class="section-title">Cricket at the Heart<br>of Europe</h2>
+      <p class="section-sub">
+        Born from a love of the game and a community
+        of expats, we've grown into a family of
+        cricket enthusiasts playing competitively
+        across Switzerland and Europe.
+      </p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-visual reveal-left">
+        <div class="about-visual-inner">
+          <img src="assets/batter.png" alt="Batter">
+        </div>
+      </div>
+
+      <div class="reveal-right">
+        <div class="about-features">
+          <div class="about-feature">
+            <div class="icon">⚡</div>
+            <div>
+              <h4>Competitive Play</h4>
+              <p>Swiss Cricket leagues and soft-ball tournaments.</p>
+            </div>
+          </div>
+
+          <div class="about-feature">
+            <div class="icon">🌍</div>
+            <div>
+              <h4>Global Community</h4>
+              <p>Players from various nationalities, united by cricket.</p>
+            </div>
+          </div>
+
+          <div class="about-feature">
+            <div class="icon">🎯</div>
+            <div>
+              <h4>Training & Development</h4>
+              <p>Weekly sessions every Weekend. Friendly - bilateral matches.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- FIXTURES -->
+  <section id="fixtures">
+    <div class="reveal">
+      <span class="section-tag">Schedule</span>
+      <h2 class="section-title">Fixtures & Results</h2>
+    </div>
+
+    <div class="fixtures-grid">
+      <div class="fixture-card reveal">
+        <div class="fixture-date">📅 Sun, 25 May 2026</div>
+        <span class="fixture-badge badge-upcoming">Upcoming</span>
+        
+        <div class="fixture-teams">
+          <span class="fixture-team">Geneva Blasters</span>
+          <span class="fixture-vs">vs</span>
+          <span class="fixture-team">Nyon</span>
+        </div>
+
+        <div class="fixture-meta">
+          <span>📍 Geneva</span>
+          <span>🕐 10:00 AM</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- JOIN -->
+  <section id="join">
+    <div class="join-inner reveal">
+      <span class="section-tag">Get Involved</span>
+      <h2 class="section-title">Ready to Blast?</h2>
+      <p class="section-sub">
+        Whether you're experienced or just starting, there's a place for you at Geneva Blasters.
+      </p>
+
+      <div class="join-form">
+        <form class="join-form-element" action="https://formsubmit.co/imkatyayan@gmail.com" method="POST">
+          <input type="email" name="email" placeholder="Your email address" required>
+          <button type="submit" class="btn-white">Join Now</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-bottom">
+      <span>
+        <p>&copy; <span id="year"></span> Geneva Blasters Cricket Club</p>
+        <script>
+          document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+      </span>
+
+      <div class="social-links">
+        <!-- Facebook -->
+        <a href="#" class="social-link" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <!-- Instagram -->
+        <a href="#" class="social-link" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <!-- Gmail / Email -->
+        <a href="mailto:imkatyayan@gmail.com" class="social-link" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
