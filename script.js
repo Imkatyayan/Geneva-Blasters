@@ -108,3 +108,26 @@ const navLinks = document.querySelector(".nav-links");
 mobileBtn.addEventListener("click", () => {
   navLinks.classList.toggle("mobile-open");
 });
+
+/* =========================================================
+   SCROLL TO TOP BUTTON
+========================================================= */
+
+const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+window.addEventListener("scroll", () => {
+  // Show the button if the user scrolls down more than 300px
+  if (window.scrollY > 300) {
+    scrollTopBtn.classList.add("show");
+  } else {
+    scrollTopBtn.classList.remove("show");
+  }
+});
+
+scrollTopBtn.addEventListener("click", () => {
+  // Smoothly scroll back to the top
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
